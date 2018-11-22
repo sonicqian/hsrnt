@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>高铁新城大屏-物联网</title>
+
+    <!-- Bootstrap -->
+    <link href="./vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="./vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="./vendors/nprogress/nprogress.css" rel="stylesheet">
+    
+    <!-- Custom styling plus plugins -->
+    <link href="./build/css/custom.min.css" rel="stylesheet">
+    <link href="./css/dp/dp.css" rel="stylesheet">
+    <script src="./build/js/prefixfree.min.js"></script>
+  </head>
+
+  <body class="nav-md" >
+    <div class="container body">
+	<!-- 叠加图层 -->
+    <div class="daping" style="background-image:url(images/wlwbg.jpg);background-position:center top; background-repeat: no-repeat; background-attachment: scroll;background-size:100%;width:1920px;height:480px">
+	<!-- <img src="images/qj.jpg" alt="Profile Image" style="max-width: 100%;height: auto;display: block;"/> -->
+	<!-- 左侧部分 -->
+				<div class="zuoping" >
+			  <div class="dp"> 
+		        <div  id="playercontainer1">
+                </div>
+			  </div>
+              <div class="dp"> 			  
+				<div class="dp" id="playercontainer2">
+                </div>
+			  </div>
+			  <div class="dp">
+				<div id="playercontainer3">
+                </div>
+			  </div>
+			  <div class="dp">
+				<div id="playercontainer4">
+                </div>
+			  </div>
+			  <div class="dp">
+				<div id="playercontainer5">
+                </div>
+			  </div>
+			  <div class="dp">
+				<div id="playercontainer6">
+                </div>
+			  </div>
+			  <div class="dp">
+				<div id="playercontainer7">
+                </div>
+			  </div>
+			  <div class="dp">
+			  
+				<div id="playercontainer8">
+                </div>
+			   </div>	
+		    </div>
+	<!-- 左侧图表 -->
+	
+	<div class="danlie">
+	<!-- 第一部分 -->
+	   <div style="background-image:url(images/wlw_03.png);background-position:center top; background-repeat: no-repeat; background-attachment: scroll;background-size:100%;width:213px;height:240px;margin-top:27px;">
+	    <div style="position:relative;top:25px;left:15px">
+		    <p style="font-family:微软雅黑;font-size:12px;color:#00ebff;text-align:left;white-space:nowrap;">报警点 <b id="rqbjsl" style="font-family:庞门正道标题体;font-size:12px;color:#fff;text-align:left;white-space:nowrap;">4</b> 个</p>
+
+			
+			</div>
+		<div id="rqbj" class="dp" style="position:relative;left:10px;width:200px"></div>
+		<div id="qiri" class="dp" style="position:relative;top:-60px;left:10px;width:200px"></div>
+	   </div>
+	   <!-- 第二部分 -->
+	   <div style="background-image:url(images/wlw_22.png);background-position:center top; background-repeat: no-repeat; background-attachment: scroll;background-size:100%;width:213px;height:240px;margin-top:-25px;">
+	    <div style="position:relative;top:20px;left:-180px;width:213px">
+		    <p style="font-family:微软雅黑;font-size:12px;color:#00ebff;text-align:left;white-space:nowrap;">报警点： <b id="xgbjsl" style="font-family:庞门正道标题体;font-size:12px;color:#fff;text-align:left;white-space:nowrap;">4</b> 个</p>
+
+			
+			</div>
+		<div id="xgbj" class="dp" style="position:relative;top:-30px;left:10px;width:200px"></div>
+		<div style="position:relative;top:50px;left:-180px;width:213px">
+		    <p style="font-family:微软雅黑;font-size:12px;color:#00ebff;text-align:left;white-space:nowrap;">巡更人： <b id="xgr" style="font-family:庞门正道标题体;font-size:12px;color:#fff;text-align:left;white-space:nowrap;">4</b> 人</p>
+		</div>
+		<div id="xgrs" class="dp" style="position:relative;top:-90px;left:10px;width:200px"></div>
+		<div style="position:relative;top:80px;left:-180px">
+		    <p style="font-family:微软雅黑;font-size:12px;color:#00ebff;text-align:left;white-space:nowrap;">今日巡更完成度： <b id="xgwc" style="font-family:庞门正道标题体;font-size:12px;color:#fff;text-align:left;white-space:nowrap;"></b> %</p>
+
+			
+			</div>
+		
+		<div id="xgwcd" class="dp" style="position:relative;top:-160px;width:200px;height:180px;"></div>
+	   </div>
+	   
+	   
+	</div>
+	
+	<!-- 中间部分 -->
+	<div class="zuopingwlw">
+	<div id="sst1" class="zuopingwlw" style="background-image:url(images/zhongjian1.jpg);background-position:center top; background-repeat: no-repeat; background-attachment: scroll;background-size:100%;margin-top:33px;"></div>
+	<div id="sst2" class="zuopingwlw" style="background-image:url(images/zhongjian2.jpg);background-position:center top; background-repeat: no-repeat; background-attachment: scroll;background-size:100%;margin-top:33px;"></div>
+	<div id="sst3" class="zuopingwlw" style="background-image:url(images/zhongjian3.jpg);background-position:center top; background-repeat: no-repeat; background-attachment: scroll;background-size:100%;margin-top:33px;"></div>
+	<div id="sst4" class="zuopingwlw" style="background-image:url(images/zhongjian4.jpg);background-position:center top; background-repeat: no-repeat; background-attachment: scroll;background-size:100%;margin-top:33px;"></div>
+	<div id="sst5" class="zuopingwlw" style="background-image:url(images/zhongjian5.jpg);background-position:center top; background-repeat: no-repeat; background-attachment: scroll;background-size:100%;margin-top:33px;"></div>
+	<div id="sst6" class="zuopingwlw" style="background-image:url(images/zhongjian6.jpg);background-position:center top; background-repeat: no-repeat; background-attachment: scroll;background-size:100%;margin-top:33px;"></div>
+	<div id="sst7" class="zuopingwlw" style="background-image:url(images/zhongjian7.jpg);background-position:center top; background-repeat: no-repeat; background-attachment: scroll;background-size:100%;margin-top:33px;"></div>
+	<div id="xuhao" style="display:none;" >0</div>
+	</div>
+	
+	
+	
+	<!-- 右边部分 -->
+	<div id="pwlyl" class="dp">
+	
+	</div>
+    <div id="tkxt" class="dp">
+	
+	</div>
+    <div id="xinxifab" class="dp">
+	
+	</div>
+    <div id="pwlyqiri" class="dp" style="margin-top:15px;margin-left:10px;width:200px;height:100px">
+	
+	</div>
+    <div id="tkbt" class="dp">
+	
+	</div>
+	<div id="xxfb" class="dp">
+	
+	</div>
+	<div class="zuopingwlw" style="width:">
+		<div style="position:relative;top:52px;left:160px;width:50px">
+		    <b id="" style="font-family:庞门正道标题体;font-size:12px;color:#fff;text-align:left;white-space:nowrap;">654</b>
+            <br>			
+		    <b id="" style="font-family:庞门正道标题体;font-size:12px;color:#fff;text-align:left;white-space:nowrap;">723</b>
+			<br>
+		    <b id="" style="font-family:庞门正道标题体;font-size:12px;color:#fff;text-align:left;white-space:nowrap;">1,045</b>
+		</div>
+		<div style="margin-left:260px;margin-top:-5px;width:50px">
+		    <b id="ktgz" style="font-family:庞门正道标题体;font-size:12px;color:#fff;text-align:left;white-space:nowrap;">4</b>
+            <br>			
+		    <b id="xfzs" style="font-family:庞门正道标题体;font-size:12px;color:#fff;text-align:left;white-space:nowrap;">4</b>
+			<br>
+		    <b id="pfzs" style="font-family:庞门正道标题体;font-size:12px;color:#fff;text-align:left;white-space:nowrap;">4</b>
+		</div>
+		<div style="margin-left:360px;margin-top:-57px;width:50px">
+		    <b id="ktxz" style="font-family:庞门正道标题体;font-size:12px;color:#fff;text-align:left;white-space:nowrap;">4</b>
+            <br>			
+		    <b id="xfxz" style="font-family:庞门正道标题体;font-size:12px;color:#fff;text-align:left;white-space:nowrap;">4</b>
+			<br>
+		    <b id="pfxz" style="font-family:庞门正道标题体;font-size:12px;color:#fff;text-align:left;white-space:nowrap;">4</b>
+		</div>
+		<div style="margin-left:430px;margin-top:-55px;width:180px;height:30px" >
+			<div class="progress" style="height:10px;margin-top:-5px;">
+					<div id="lyl1" class="progress-bar progress-bar-info progress-bar-striped active" style="width: 85%;">
+					</div>
+				</div>
+
+				<div class="progress" style="height:10px;margin-top:-8px;">
+					<div id="lyl2" class="progress-bar progress-bar-success progress-bar-striped active" style="width: 75%;">
+					</div>
+				</div>
+
+				<div class="progress" style="height:10px;margin-top:-8px;">
+					<div id="lyll3" class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 90%;">
+					</div>
+				</div>
+		</div>
+		<div id="yxztjk" style="margin-top:50px;width:639px;height:80px;">
+		</div>
+	</div>
+
+
+
+	<!-- 右边部分结束 -->
+	
+	<!-- 叠加图层结束 -->
+    </div>
+	
+	<!-- 闪烁图标 -->
+
+    <!-- jQuery -->
+    <script src="./vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="./vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="./vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="./vendors/nprogress/nprogress.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="./build/js/custom.min.js"></script>
+	<script type="text/javascript" src="./build/js/player/cyberplayer.js"></script>
+	<script src="./build/js/echarts/echarts.js"></script>
+	<script src="./build/js/data/wlwtb.js"></script>
+	
+<script type="text/javascript">
+	// 基于准备好的dom，初始化echarts图表
+
+
+var	dingshi=setInterval(Method, 2000);
+var Method=function () {
+
+var xuhao = $("#xuhao").html();
+	
+   $.ajax({
+                    type: "get",
+                    url: "./Model/wlw.php?v="+(new Date()).valueOf(), 
+                    data: {"xuhao":xuhao},					
+                    dataType: "json",
+                    success: function(data) {				
+					$("#ktgz").empty().append(data.sj1s);
+					$("#xfzs").empty().append(data.sj3s);
+					$("#pfzs").empty().append(data.sj5s);
+					$("#xuhao").empty().append(data.sst);
+					
+					var ktxz=data.sj1;
+					if (ktxz>30){
+					   $("#ktxz").empty().append("<i class='red'><i class='fa fa-sort-asc'></i>"+ktxz+"</i>");
+				   }else{
+					   $("#ktxz").empty().append("<i class='green'><i class='fa fa-sort-desc'></i>"+ktxz+"</i>");
+				   }
+					var xfxz=data.sj3;
+					if (xfxz>30){
+					   $("#xfxz").empty().append("<i class='red'><i class='fa fa-sort-asc'></i>"+xfxz+"</i>");
+				   }else{
+					   $("#xfxz").empty().append("<i class='green'><i class='fa fa-sort-desc'></i>"+xfxz+"</i>");
+				   }
+					var pfxz=data.sj5;
+					if (pfxz>30){
+					   $("#pfxz").empty().append("<i class='red'><i class='fa fa-sort-asc'></i>"+pfxz+"</i>");
+				   }else{
+					   $("#pfxz").empty().append("<i class='green'><i class='fa fa-sort-desc'></i>"+pfxz+"</i>");
+				   }
+				
+					
+					$("#rqbjsl").empty().append(data.rqbjd);
+					$("#xgbjsl").empty().append(data.xgbjd);
+				
+                    $("#xgr").empty().append(data.xgr);
+                    $("#xgwc").empty().append(data.rqbjd);				
+
+	                $("#lyl1").attr("style", "width:"+data.sj2s+"%");
+	                $("#lyl2").attr("style", "width:"+data.sj3s+"%");
+	                $("#lyll3").attr("style", "width:"+data.sj5s+"%");
+					
+					rqbj.setOption({
+                            series: [{
+                                     data: [data.rqbjd1,data.rqbjd2]
+                                    }]
+                                    });
+					xgbj.setOption({
+                            series: [{
+                                     data: [data.xgbjd1,data.xgbjd2]
+                                    }]
+                                    });
+					xgrs.setOption({
+                            series: [{
+                                     data: [data.xgr1,data.xgr2]
+                                    }]
+                                    });
+									var jindu=data.rqbjd/100;
+					xgwcd.setOption({
+                            series: [{
+							         axisLine: {
+                                         show: true,
+                                         lineStyle: {
+                                         width: 5,
+                                         color: [
+                                                [jindu, new echarts.graphic.LinearGradient(0, 0, 1, 0, 
+												[{
+                                                 offset: 0,
+                                                 color: '#5c53de'
+                                                  },
+                                                {
+                                             offset: 1,
+                                          color: '#18c8ff'
+              }
+            ]
+              )
+            ],
+            [
+              1, '#413e54'
+            ]
+          ]
+        }
+      },
+                                     data: [data.rqbjd]
+                                    }]
+                                    });
+					qiri.setOption({
+					        xAxis: {
+                            data: data.yzsj,
+                                   },
+                            series: [
+							{data:[data.sj2, data.sj3, data.sj4, data.sj5,data.sj2, data.sj3, data.sj1]},
+							{data:[data.sj5, data.sj4, data.sj3, data.sj2, data.sj4, 33, data.sj2]},
+							{data:[15, 23, 20, 15, 19, 33, data.sj3]},
+							{data:[32, 33, 30, 33, 39, 33, data.sj4]},
+							{data:[82, 93, 90, 93, 129, 133,data.sj5]}
+                                    ]
+                                    });
+					pwlyqiri.setOption({
+					        xAxis: {
+                            data: data.yzsj,
+                                   },
+                            series: [
+							{type:'line',data:[82, 93, 90, 93, 129, 133,data.sj5]},
+							{type:'line',data:[15, 23, 20, 15, 19, 33, data.sj2]},
+							{type:'line',data:[data.sj2, data.sj3, data.sj4, data.sj5,data.sj2, data.sj3, data.sj1]},
+							{type:'line',data:[data.sj5, data.sj4, data.sj3, data.sj2, data.sj4, 33, data.sj2]},
+							{type:'line',data:[15, 23, 20, 15, 19, 33, data.sj3]},
+							{type:'line',data:[32, 33, 30, data.sj4, 39, 33, data.sj4]}
+							
+                                    ]
+                                    });
+					tkbt.setOption({
+					    series: [
+					        {type:'pie',
+							 data : [
+                {name:'1', 
+				 value:data.sj1,
+				 hover:true,
+				 label:{
+                            show:true,
+                            position:'center',
+							formatter:'{c}'
+                        },
+				 itemStyle:{
+					 color:'#21dcff',
+					 opacity :1
+				 }},
+                {name:'2', value:data.sj1s,label:{
+                            show:false,
+                            position:'inner',
+							formatter:'{c}'
+                        },
+				 itemStyle:{
+					 color: {
+                    type: 'linear',
+                    x: 0,
+                    y: 0,
+                    x2: 1,
+                    y2: 1,
+                    colorStops: [//{
+                    //     offset: 0, color: 'red' // 0% 处的颜色
+                    // }, 
+                     {offset: 0.6, color: '#393c9e' // 0% 处的颜色
+                      }, 
+                    //  {offset: 0.5, color: 'green' // 0% 处的颜色
+                    //  }, 
+                    {
+                        offset: 0.2, color: '#135d99' // 100% 处的颜色
+                    }],
+                    globalCoord: true // 缺省为 false
+                }
+				 }}
+            ]
+							 },
+					        {type:'pie',
+							
+							data : [
+                {name:'1', 
+				 value:data.sj2,
+				 label:{
+                            show:true,
+                            position:'center',
+							formatter:'{c}'
+                        },
+				itemStyle:{
+					color:'#54fd9d'
+				}
+				},
+                {name:'2', 
+				 value:data.sj2s,
+				 label:{
+                            show:false,
+                            position:'inner',
+							formatter:'{c}'
+                        },
+				 itemStyle:{
+					 color: {
+                    type: 'linear',
+                    x: 0,
+                    y: 0,
+                    x2: 1,
+                    y2: 1,
+                    colorStops: [//{
+                    //     offset: 0, color: 'red' // 0% 处的颜色
+                    // }, 
+                     {offset: 0.6, color: '#235f6a' // 0% 处的颜色
+                      }, 
+                    //  {offset: 0.5, color: 'green' // 0% 处的颜色
+                    //  }, 
+                    {
+                        offset: 0.2, color: '#1c4964' // 100% 处的颜色
+                    }],
+                    globalCoord: true // 缺省为 false
+                }
+				 }}
+            ]},
+					        {type:'pie',data : [
+                {name:'1', value:data.sj3s,label:{
+                            show:false,
+                            position:'inner',
+							formatter:'{c}'
+                        }},
+                {name:'2', value:data.sj3,label:{
+                            show:true,
+                            position:'center',
+							formatter:'{c}'
+                        }}
+            ]},
+					            ]
+					                });
+									
+									
+									
+			xxfb.setOption({
+			
+			     series:[
+				    {
+					type : 'pie',
+					data : [
+                {name:'1', 
+				 value:data.sj4,
+				 hover:true,
+				 label:{
+                            show:true,
+                            position:'center',
+							formatter:'{c}'
+                        },
+				 itemStyle:{
+					 color:'#21dcff',
+					 opacity :1
+				 }},
+                {name:'1', value:data.sj4s,label:{
+                            show:false,
+                            position:'inner',
+							formatter:'{c}'
+                        },
+				 itemStyle:{
+					 color: {
+                    type: 'linear',
+                    x: 0,
+                    y: 0,
+                    x2: 1,
+                    y2: 1,
+                    colorStops: [//{
+                    //     offset: 0, color: 'red' // 0% 处的颜色
+                    // }, 
+                     {offset: 0.6, color: '#393c9e' // 0% 处的颜色
+                      }, 
+                    //  {offset: 0.5, color: 'green' // 0% 处的颜色
+                    //  }, 
+                    {
+                        offset: 0.2, color: '#135d99' // 100% 处的颜色
+                    }],
+                    globalCoord: true // 缺省为 false
+                }
+				 }}
+            ]	
+					},					
+					{
+					type : 'pie',
+					data : [
+                {name:'1', 
+				 value:data.sj5,
+				 label:{
+                            show:true,
+                            position:'center',
+							formatter:'{c}'
+                        },
+				itemStyle:{
+					color:'#54fd9d'
+				}
+				},
+                {name:'2', 
+				 value:data.sj5s,
+				 label:{
+                            show:false,
+                            position:'inner',
+							formatter:'{c}'
+                        },
+				 itemStyle:{
+					 color: {
+                    type: 'linear',
+                    x: 0,
+                    y: 0,
+                    x2: 1,
+                    y2: 1,
+                    colorStops: [//{
+                    //     offset: 0, color: 'red' // 0% 处的颜色
+                    // }, 
+                     {offset: 0.6, color: '#235f6a' // 0% 处的颜色
+                      }, 
+                    //  {offset: 0.5, color: 'green' // 0% 处的颜色
+                    //  }, 
+                    {
+                        offset: 0.2, color: '#1c4964' // 100% 处的颜色
+                    }],
+                    globalCoord: true // 缺省为 false
+                }
+				 }}
+            ]
+					
+					}
+				 
+				  ]
+			
+			    });
+				
+	yxztjk.setOption({
+			series : [
+			{
+            type : 'pie',
+            center : ['5.5%', '60%'],
+            radius : radius,
+            data : [
+                {name:'1', 
+				 value:data.sj5,
+				 hover:true,
+				 label:{
+                            show:true,
+                            position:'center',
+							formatter:'{c}'
+                        },
+				 itemStyle:{
+					 color:'#21dcff',
+					 opacity :1
+				 }},
+                {name:'2', value:data.sj5s,label:{
+                            show:false,
+                            position:'inner',
+							formatter:'{c}'
+                        },
+				 itemStyle:{
+					 color: {
+                    type: 'linear',
+                    x: 0,
+                    y: 0,
+                    x2: 1,
+                    y2: 1,
+                    colorStops: [//{
+                    //     offset: 0, color: 'red' // 0% 处的颜色
+                    // }, 
+                     {offset: 0.6, color: '#393c9e' // 0% 处的颜色
+                      }, 
+                    //  {offset: 0.5, color: 'green' // 0% 处的颜色
+                    //  }, 
+                    {
+                        offset: 0.2, color: '#135d99' // 100% 处的颜色
+                    }],
+                    globalCoord: true // 缺省为 false
+                }
+				 }}
+            ]
+        },
+        {
+            type : 'pie',
+            center : ['15.5%', '60%'],
+            radius : radius,
+            x:'90%', // for funnel
+            data : [
+                {name:'3', 
+				 value:data.sj4,
+				 label:{
+                            show:true,
+                            position:'center',
+							formatter:'{c}'
+                        },
+				itemStyle:{
+					color:'#54fd9d'
+				}
+				},
+                {name:'4', 
+				 value:data.sj4s,
+				 label:{
+                            show:false,
+                            position:'inner',
+							formatter:'{c}'
+                        },
+				 itemStyle:{
+					 color: {
+                    type: 'linear',
+                    x: 0,
+                    y: 0,
+                    x2: 1,
+                    y2: 1,
+                    colorStops: [//{
+                    //     offset: 0, color: 'red' // 0% 处的颜色
+                    // }, 
+                     {offset: 0.6, color: '#235f6a' // 0% 处的颜色
+                      }, 
+                    //  {offset: 0.5, color: 'green' // 0% 处的颜色
+                    //  }, 
+                    {
+                        offset: 0.2, color: '#1c4964' // 100% 处的颜色
+                    }],
+                    globalCoord: true // 缺省为 false
+                }
+				 }}
+            ]
+        },
+        {
+            type : 'pie',
+            center : ['25.5%', '60%'],
+            radius : radius,
+            x:'90%', // for funnel
+            data : [
+                {name:'5', value:data.sj3,label:{
+                            show:false,
+                            position:'inner',
+							formatter:'{c}'
+                        }},
+                {name:'6', value:data.sj3s,label:{
+                            show:true,
+                            position:'center',
+							formatter:'{c}'
+                        }}
+            ],
+			color:['#692c63','#fd4671']
+        },{
+            type : 'pie',
+            center : ['40%', '60%'],
+            radius : radius,
+            data : [
+                {name:'7', 
+				 value:data.sj2,
+				 hover:true,
+				 label:{
+                            show:true,
+                            position:'center',
+							formatter:'{c}'
+                        },
+				 itemStyle:{
+					 color:'#21dcff',
+					 opacity :1
+				 }},
+                {name:'8', value:data.sj2s,label:{
+                            show:false,
+                            position:'inner',
+							formatter:'{c}'
+                        },
+				 itemStyle:{
+					 color: {
+                    type: 'linear',
+                    x: 0,
+                    y: 0,
+                    x2: 1,
+                    y2: 1,
+                    colorStops: [//{
+                    //     offset: 0, color: 'red' // 0% 处的颜色
+                    // }, 
+                     {offset: 0.6, color: '#393c9e' // 0% 处的颜色
+                      }, 
+                    //  {offset: 0.5, color: 'green' // 0% 处的颜色
+                    //  }, 
+                    {
+                        offset: 0.2, color: '#135d99' // 100% 处的颜色
+                    }],
+                    globalCoord: true // 缺省为 false
+                }
+				 }}
+            ]
+        },
+        {
+            type : 'pie',
+            center : ['50%', '60%'],
+            radius : radius,
+            x:'90%', // for funnel
+            data : [
+                {name:'9', 
+				 value:data.sj1,
+				 label:{
+                            show:true,
+                            position:'center',
+							formatter:'{c}'
+                        },
+				itemStyle:{
+					color:'#54fd9d'
+				}
+				},
+                {name:'10', 
+				 value:data.sj1s,
+				 label:{
+                            show:false,
+                            position:'inner',
+							formatter:'{c}'
+                        },
+				 itemStyle:{
+					 color: {
+                    type: 'linear',
+                    x: 0,
+                    y: 0,
+                    x2: 1,
+                    y2: 1,
+                    colorStops: [//{
+                    //     offset: 0, color: 'red' // 0% 处的颜色
+                    // }, 
+                     {offset: 0.6, color: '#235f6a' // 0% 处的颜色
+                      }, 
+                    //  {offset: 0.5, color: 'green' // 0% 处的颜色
+                    //  }, 
+                    {
+                        offset: 0.2, color: '#1c4964' // 100% 处的颜色
+                    }],
+                    globalCoord: true // 缺省为 false
+                }
+				 }}
+            ]
+        },
+        {
+            type : 'pie',
+            center : ['60%', '60%'],
+            radius : radius,
+            x:'90%', // for funnel
+            data : [
+                {name:'1', value:data.sj3,label:{
+                            show:false,
+                            position:'inner',
+							formatter:'{c}'
+                        }},
+                {name:'2', value:data.sj3s,label:{
+                            show:true,
+                            position:'center',
+							formatter:'{c}'
+                        }}
+            ],
+			color:['#692c63','#fd4671']
+        },{
+            type : 'pie',
+            center : ['74.5%', '60%'],
+            radius : radius,
+            data : [
+                {name:'3', 
+				 value:data.sj2,
+				 hover:true,
+				 label:{
+                            show:true,
+                            position:'center',
+							formatter:'{c}'
+                        },
+				 itemStyle:{
+					 color:'#21dcff',
+					 opacity :1
+				 }},
+                {name:'4', value:data.sj2s,label:{
+                            show:false,
+                            position:'inner',
+							formatter:'{c}'
+                        },
+				 itemStyle:{
+					 color: {
+                    type: 'linear',
+                    x: 0,
+                    y: 0,
+                    x2: 1,
+                    y2: 1,
+                    colorStops: [//{
+                    //     offset: 0, color: 'red' // 0% 处的颜色
+                    // }, 
+                     {offset: 0.6, color: '#393c9e' // 0% 处的颜色
+                      }, 
+                    //  {offset: 0.5, color: 'green' // 0% 处的颜色
+                    //  }, 
+                    {
+                        offset: 0.2, color: '#135d99' // 100% 处的颜色
+                    }],
+                    globalCoord: true // 缺省为 false
+                }
+				 }}
+            ]
+        },
+        {
+            type : 'pie',
+            center : ['84.5%', '60%'],
+            radius : radius,
+            x:'90%', // for funnel
+            data : [
+                {name:'5', 
+				 value:data.sj1,
+				 label:{
+                            show:true,
+                            position:'center',
+							formatter:'{c}'
+                        },
+				itemStyle:{
+					color:'#54fd9d'
+				}
+				},
+                {name:'Facebook', 
+				 value:data.sj1s,
+				 label:{
+                            show:false,
+                            position:'inner',
+							formatter:'{c}'
+                        },
+				 itemStyle:{
+					 color: {
+                    type: 'linear',
+                    x: 0,
+                    y: 0,
+                    x2: 1,
+                    y2: 1,
+                    colorStops: [//{
+                    //     offset: 0, color: 'red' // 0% 处的颜色
+                    // }, 
+                     {offset: 0.6, color: '#235f6a' // 0% 处的颜色
+                      }, 
+                    //  {offset: 0.5, color: 'green' // 0% 处的颜色
+                    //  }, 
+                    {
+                        offset: 0.2, color: '#1c4964' // 100% 处的颜色
+                    }],
+                    globalCoord: true // 缺省为 false
+                }
+				 }}
+            ]
+        },
+        {
+            type : 'pie',
+            center : ['94.5%', '60%'],
+            radius : radius,
+            x:'90%', // for funnel
+            data : [
+                {name:'5', value:data.sj5,label:{
+                            show:false,
+                            position:'inner',
+							formatter:'{c}'
+                        }},
+                {name:'6', value:data.sj5s,label:{
+                            show:true,
+                            position:'center',
+							formatter:'{c}'
+                        }}
+            ],
+			color:['#692c63','#fd4671']
+        }
+			
+			
+			
+			
+			
+			
+			]
+			
+			
+			
+			
+			
+			
+			
+			
+			});
+
+var sst=data.sst;
+					<!-- alert(sst); -->
+switch (sst){
+case 1:
+    $("#sst1").show();
+    $("#sst2").hide();
+    $("#sst3").hide();
+    $("#sst4").hide();
+    $("#sst5").hide();
+    $("#sst6").hide();
+    $("#sst7").hide();
+  break;
+case 2:
+    $("#sst1").hide();
+    $("#sst2").show();
+    $("#sst3").hide();
+    $("#sst4").hide();
+    $("#sst5").hide();
+    $("#sst6").hide();
+    $("#sst7").hide();
+  break;
+case 3:
+    $("#sst1").hide();
+    $("#sst2").hide();
+    $("#sst3").show();
+    $("#sst4").hide();
+    $("#sst5").hide();
+    $("#sst6").hide();
+    $("#sst7").hide();
+  break;
+case 4:
+    $("#sst1").hide();
+    $("#sst2").hide();
+    $("#sst3").hide();
+    $("#sst4").show();
+    $("#sst5").hide();
+    $("#sst6").hide();
+    $("#sst7").hide();
+  break;
+case 5:
+    $("#sst1").hide();
+    $("#sst2").hide();
+    $("#sst3").hide();
+    $("#sst4").hide();
+    $("#sst5").show();
+    $("#sst6").hide();
+    $("#sst7").hide();
+	break;
+case 6:
+    $("#sst1").hide();
+    $("#sst2").hide();
+    $("#sst3").hide();
+    $("#sst4").hide();
+    $("#sst5").hide();
+    $("#sst6").show();
+    $("#sst7").hide();
+    break;
+case 7:
+    $("#sst1").hide();
+    $("#sst2").hide();
+    $("#sst3").hide();
+    $("#sst4").hide();
+    $("#sst5").hide();
+    $("#sst6").hide();
+    $("#sst7").show();
+default:
+    $("#sst1").show();
+    $("#sst2").hide();
+    $("#sst3").hide();
+    $("#sst4").hide();
+    $("#sst5").hide();
+    $("#sst6").hide();
+    $("#sst7").hide();
+  break;
+}			
+				
+
+					
+					
+					
+					
+					
+					
+					
+					
+                    }
+                });
+};
+clearInterval(dingshi);
+dingshi=setInterval(Method,2000);
+	
+	// 为echarts对象加载数据 
+		
+</script>
+	<script type="text/javascript">
+		var player = cyberplayer("playercontainer1").setup({
+        width : 213,
+        height : 120,
+        backcolor : "#FFFFFF",
+        stretching : "uniform",
+
+        file : "http://172.16.11.4/bjb.m3u8",
+        ak : "4286fc4b17bc430dad04a9e2f4917316",
+        autoStart : true,
+        repeat : false,
+        volume : 100,
+        controls : "none"
+        });
+		var player = cyberplayer("playercontainer2").setup({
+        width : 213,
+        height : 120,
+        backcolor : "#FFFFFF",
+        stretching : "uniform",
+
+        file : "http://172.16.11.4/bjb.m3u8",
+        ak : "4286fc4b17bc430dad04a9e2f4917316",
+        autoStart : true,
+        repeat : false,
+        volume : 100,
+        controls : "none"
+        });
+		
+		var player = cyberplayer("playercontainer3").setup({
+        width : 213,
+        height : 120,
+        backcolor : "#FFFFFF",
+        stretching : "uniform",
+
+        file : "http://172.16.11.4/bjb.m3u8",
+        ak : "4286fc4b17bc430dad04a9e2f4917316",
+        autoStart : true,
+        repeat : false,
+        volume : 100,
+        controls : "none"
+        });
+		
+		var player = cyberplayer("playercontainer4").setup({
+        width : 213,
+        height : 120,
+        backcolor : "#FFFFFF",
+        stretching : "uniform",
+
+        file : "http://172.16.11.4/bjb.m3u8",
+        ak : "4286fc4b17bc430dad04a9e2f4917316",
+        autoStart : true,
+        repeat : false,
+        volume : 100,
+        controls : "none"
+        });
+		
+		var player = cyberplayer("playercontainer5").setup({
+        width : 213,
+        height : 120,
+        backcolor : "#FFFFFF",
+        stretching : "uniform",
+
+        file : "http://172.16.11.4/bjb.m3u8",
+        ak : "4286fc4b17bc430dad04a9e2f4917316",
+        autoStart : true,
+        repeat : false,
+        volume : 100,
+        controls : "none"
+        });
+		
+		var player = cyberplayer("playercontainer6").setup({
+        width : 213,
+        height : 120,
+        backcolor : "#FFFFFF",
+        stretching : "uniform",
+
+        file : "http://172.16.11.4/bjb.m3u8",
+        ak : "4286fc4b17bc430dad04a9e2f4917316",
+        autoStart : true,
+        repeat : false,
+        volume : 100,
+        controls : "none"
+        });
+		
+		var player = cyberplayer("playercontainer7").setup({
+        width : 213,
+        height : 120,
+        backcolor : "#FFFFFF",
+        stretching : "uniform",
+
+        file : "http://172.16.11.4/bjb.m3u8",
+        ak : "4286fc4b17bc430dad04a9e2f4917316",
+        autoStart : true,
+        repeat : false,
+        volume : 100,
+        controls : "none"
+        });var player = cyberplayer("playercontainer8").setup({
+        width : 213,
+        height : 120,
+        backcolor : "#FFFFFF",
+        stretching : "uniform",
+
+        file : "http://172.16.11.4/bjb.m3u8",
+        ak : "4286fc4b17bc430dad04a9e2f4917316",
+        autoStart : true,
+        repeat : false,
+        volume : 100,
+        controls : "none"
+        });
+			
+			
+	</script>
+  </body>
+</html>

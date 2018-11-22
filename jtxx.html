@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>高铁新城大屏-交通信息</title>
+
+    <!-- Bootstrap -->
+    <link href="./vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="./vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="./vendors/nprogress/nprogress.css" rel="stylesheet">
+    
+    <!-- Custom styling plus plugins -->
+    <link href="./build/css/custom.min.css" rel="stylesheet">
+    <link href="./css/dp/dp.css" rel="stylesheet">
+    <script src="./build/js/prefixfree.min.js"></script>
+  </head>
+  
+    <body class="nav-md" >
+    <div class="container body">
+	<!-- 叠加图层 -->
+
+	
+    <div class="daping" style="background-image:url(images/dljt.jpg);background-position:center top; background-repeat: no-repeat; background-attachment: scroll;background-size:100%;width:1920px;height:480px">
+	     <!-- 左侧图层 -->
+	    <div class="zuoping" style="width:639px;">
+		</div>
+	     <!-- 左侧图层结束 -->
+		
+		<!-- 中间图层 -->
+	    <div class="zuoping" style="width:639px;">
+		</div>
+	     <!-- 中间图层结束 -->
+		 
+		 <!-- 右侧图层 -->
+	    <div class="zuoping" style="width:639px;">
+		    <div style="position:relative;margin-left:350px;margin-top:8px;width:100px">
+			     <p id="riqi" style="font-family:庞门正道标题体;font-size:12px;color:#fff;text-align:left;white-space:nowrap;">2018/11/05 </p>
+				 <p id="shijian" style="font-family:庞门正道标题体;font-size:16px;color:#fff;text-align:left;white-space:nowrap;margin-top:-30px;margin-left:95px;">09:18:56</p>
+			</div>
+		    <div class="dp" style="height:200px">
+			   
+			    <p id="crsj" style="font-family:微软雅黑;font-size:12px;color:#fff;text-align:left;white-space:nowrap;margin-left:40px;margin-top:20px;">09/11 星期二 09:18:56</p>
+			    <p id="ckdz" style="font-family:微软雅黑;font-size:12px;color:#fff;text-align:left;white-space:nowrap;margin-left:40px;margin-top:13px;">滨海购物公园 地下车库</p>
+			    <p id="xzcp" style="font-family:方正大黑简体;font-size:25px;color:#fff;text-align:left;white-space:nowrap;margin-left:40px;margin-top:20px;">贵C 8Q153</p>
+			    <p id="crk" style="font-family:微软雅黑;font-size:10px;color:#fff;text-align:left;white-space:nowrap;margin-left:18px;margin-top:7px;">出库</p>
+			    <p id="ckcp" style="font-family:方正大黑简体;font-size:25px;color:#fff;text-align:left;white-space:nowrap;margin-left:40px;margin-top:-10px;">贵C AA098</p>
+			
+			</div>
+			<div id="tcctjpm" class="dp" style="height:200px;width:426px">
+			</div>
+			<div id="drtcfz" class="dp" style="height:200px;margin-top:40px">
+			</div>
+			<div id="tcccqsfx" class="dp" style="height:100px;width:426px;margin-top:35px">
+			</div>
+			<div id="tcccqsfx1" class="dp" style="height:100px;width:426px">
+			</div>
+		</div>
+	     <!-- 右侧图层结束 -->
+	
+	</div>
+	
+	<!-- 叠加图层结束 -->
+	</div>
+	    <script src="./vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="./vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="./vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="./vendors/nprogress/nprogress.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="./build/js/custom.min.js"></script>
+	<script src="./build/js/echarts/echarts.js"></script>
+	<script src="./build/js/data/jtxx.js"></script>
+		<script >
+
+	
+var	dingshi=setInterval(Method, 2000);
+var Method=function () {
+
+
+	
+   $.ajax({
+                    type: "get",
+                    url: "./Model/jtxx.php?v="+(new Date()).valueOf(), 
+                    data: {},					
+                    dataType: "json",
+                    success: function(data) {				
+					$("#riqi").empty().append(data.riqi);
+					$("#shijian").empty().append(data.shijian);				
+					
+					$("#crsj").empty().append(data.riqi+" "+data.shijian);
+					$("#ckdz").empty().append(data.ckdz);
+					$("#xzcp").empty().append(data.xzcp);
+					$("#ckcp").empty().append(data.ckcp);
+					$("#crk").empty().append(data.crk);
+				
+				
+					
+					
+					
+					tcctjpm.setOption({
+                            series: [{
+                                     data:data.ckpm
+                                    },{
+									 data:data.ckpm1
+									}]
+                                    });
+					drtcfz.setOption({
+                            series: [
+	    {
+    
+  },
+        {
+        axisLine: {
+        show: true,
+        lineStyle: {
+          width: 3,
+          color: [
+            [
+              data.disfz/100, new echarts.graphic.LinearGradient(
+              0, 0, 1, 0, [{
+              offset: 0,
+              color: '#5c53de'
+            },
+              {
+                offset: 1,
+                color: '#18c8ff'
+              }
+            ]
+              )
+            ],
+            [
+              1, '#413e54'
+            ]
+          ]
+        }
+      },
+            data: [{value:data.disfz, name: ''}]
+        },
+		{
+  },
+        {
+         
+        axisLine: {
+        show: true,
+        lineStyle: {
+          width: 3,
+          color: [
+            [
+              data.dxfz/100, new echarts.graphic.LinearGradient(
+              0, 0, 1, 0, [{
+              offset: 0,
+              color: '#5c53de'
+            },
+              {
+                offset: 1,
+                color: '#18c8ff'
+              }
+            ]
+              )
+            ],
+            [
+              1, '#413e54'
+            ]
+          ]
+        }
+      },
+            data: [{value: data.dxfz, name: ''}]
+        }
+    ]
+                                    });
+					tcccqsfx.setOption({
+                            series: [{
+                                     data:[120, 132, 101, 134, 90, 230, data.dxfz]
+                                    },{
+									 data:[220, 182, 191, 234, 290, 330, data.disfz]
+									}]
+                                    });
+					tcccqsfx1.setOption({
+                            series: [{
+                                     data:[210, 134, 90, 230, 210, 101, data.disfz]
+                                    },{
+									 data:[310,232, 201, 154, 190, 330, data.dxfz]
+									}]
+                                    });
+
+					
+
+					
+					
+					
+					
+					
+					
+					
+					
+                    }
+                });
+};
+clearInterval(dingshi);
+dingshi=setInterval(Method,2000);
+</script>
+	</body>
+</html>
